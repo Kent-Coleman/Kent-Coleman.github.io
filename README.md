@@ -1,2 +1,2 @@
-# WebsiteResume
-A personal website built from scratch in HTML, CSS, and Javascript to host a resume.
+# Resume Website
+A personal resume website built from scratch in HTML, CSS, and Javascript. 
