@@ -10,28 +10,29 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7eb21dc31d.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
-<div id="header">
-    <div class="container">
-      <nav>
-        <img src="Images/logo3.png" class="logo">
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fa-solid fa-x" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Software Developer</p>
-        <h1>Hi, I'm <span>Kent</span>!<br>From Asheville, NC</h1>
+    
+    <!-- ----------home---------- -->
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="Images/logo3.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Kent</span>!<br>From Asheville, NC</h1>
+          </div>
       </div>
-  </div>
-</div>
+    </div>
 
 <!-- ----------about---------- -->
 <div id="about">
@@ -42,13 +43,15 @@
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
-        <p>Highly motivated and ambitious Computer Science student with a foundation
-           in the software development process, programming languages, and problem-solving.
-            Graduating with a 3.97 GPA and several certifications, I'm equipped with hands-on 
-            experience and a strong academic background. I am eager to leverage my technical 
-            proficiency, and adaptability in a growth-focused environment. With a passion for 
-            learning and a commitment to producing efficient and quality results, I am dedicated 
-            to applying my knowledge to create meaningful solutions.</p>
+        <p>Highly motivated and ambitious Computer Science graduate with a strong 
+          foundation in the software development process, technologies, and several 
+          programming languages. Graduating with a 3.97 GPA, several certifications, 
+          and numerous portfolio projects, I'm equipped with hands-on experience 
+          and a strong academic background. I am eager to leverage my technical 
+          proficiency and adaptability in a growth-focused environment. With a 
+          passion for learning and commitment to producing efficient and quality 
+          results, I am dedicated to applying my knowledge and skills to create 
+          meaningful solutions.</p>
 
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -57,8 +60,8 @@
         </div>
         <div class="tab-contents active-tab" id="skills">
           <ul>
-            <li><span>Programming</span><br>Java, Python, Golang, C++, SQL, HTML, CSS</li>
-            <li><span>Developer Tools</span><br>GitHub, MySQL, Android Studio, VS Code</li>
+            <li><span>Programming</span><br>Java, Python, Javascript, PHP, Golang, C++, SQL, HTML, CSS</li>
+            <li><span>Developer Tools</span><br>Git, Android Studio, VS Code, XAMPP</li>
             <li><span>Software Development Process</span><br>Agile, Problem-Solving, Communication, Adaptability, <br> 
               Organization, & Collaboration</li>
           </ul>
@@ -71,15 +74,16 @@
         </div>
         <div class="tab-contents" id="education">
           <ul>
-            <li><span>Colorado State University Global</span><br>Bachelors of Computer Science - Magna Cum Laude: 3.97 GPA</li>
-            <li><span>Systems Security Certified Practioner (SCCP) Certification</span><br></li>
-            <li><span>CompTIA Network+ Certification</span><br></li>
+            <li><span>Degree</span><br>Colorado State University Global - B.S. in Computer Science: 3.97 GPA</br></li>
+            <li><span>Certifications</span><br>Systems Security Certified Practioner (SCCP) Certification </br>
+            CompTIA Network+ Certification</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <!-- ----------services---------- -->
 <div id="services">
   <div class="container">
@@ -106,6 +110,7 @@
     </div>
   </div>
 </div>
+
 <!-- ----------portfolio---------- -->
 <div id="portfolio">
   <div class="container">
@@ -139,6 +144,7 @@
     <a href="https://github.com/Kent-Coleman" class="btn">See more</a>
   </div>
 </div>
+
 <!-- ----------contact---------- -->
 <div id="contact">
   <div class="container">
@@ -150,6 +156,7 @@
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/kentcoleman/"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/Kent-Coleman"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.hackerrank.com/profile/coleman_a_kent"><i class="fa-brands fa-hackerrank"></i></a>
         </div>
         <a href="Images/resume.pdf" download class="btn btn2">Download CV</a>
       </div>
@@ -169,6 +176,7 @@
   </div>
 </div>
 
+<!-- ----------JS---------- -->
 <script>
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
