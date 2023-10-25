@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/7eb21dc31d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    
+
     <!-- ----------home---------- -->
     <div id="header">
         <div class="container">
@@ -23,10 +23,12 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
+              <!-- ----------mobile menu---------- -->
               <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
           </nav>
+
           <div class="header-text">
             <p>Software Developer</p>
             <h1>Hi, I'm <span>Kent</span>!<br>From Asheville, NC</h1>
@@ -38,9 +40,11 @@
 <div id="about">
   <div class="container">
     <div class="row">
+
       <div class="about-col-1">
         <img src="Images/user4.png">
       </div>
+
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
         <p>Highly motivated and ambitious Computer Science graduate with a strong 
@@ -52,7 +56,6 @@
           passion for learning and commitment to producing efficient and quality 
           results, I am dedicated to applying my knowledge and skills to create 
           meaningful solutions.</p>
-
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
           <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -61,8 +64,8 @@
         <div class="tab-contents active-tab" id="skills">
           <ul>
             <li><span>Programming</span><br>Java, Python, Javascript, PHP, Golang, C++, SQL, HTML, CSS</li>
-            <li><span>Developer Tools</span><br>Git, Android Studio, VS Code, XAMPP</li>
-            <li><span>Software Development Process</span><br>Agile, Problem-Solving, Communication, Adaptability, <br> 
+            <li><span>Developer Tools</span><br>Git, Android Studio, VS Code, XAMPP, Bootstrap</li>
+            <li><span>Software Development Process</span><br>Agile, Problem-Solving, Communication, Adaptability,<br> 
               Organization, & Collaboration</li>
           </ul>
         </div>
@@ -74,8 +77,8 @@
         </div>
         <div class="tab-contents" id="education">
           <ul>
-            <li><span>Degree</span><br>Colorado State University Global - B.S. in Computer Science: 3.97 GPA</br></li>
-            <li><span>Certifications</span><br>Systems Security Certified Practioner (SCCP) Certification </br>
+            <li><span>Degree</span><br>Colorado State University Global - B.S. in Computer Science: 3.97 GPA</li>
+            <li><span>Certifications</span><br>Systems Security Certified Practioner (SCCP) Certification<br>
             CompTIA Network+ Certification</li>
           </ul>
         </div>
@@ -149,6 +152,7 @@
 <div id="contact">
   <div class="container">
     <div class="row">
+
       <div class="contact-left">
         <h1 class="sub-title">Contact Me</h1>
         <p><i class="fa-solid fa-paper-plane"></i>coleman.a.kent@gmail.com</p>
@@ -160,6 +164,7 @@
         </div>
         <a href="Images/resume.pdf" download class="btn btn2">Download CV</a>
       </div>
+
       <div class="contact-right">
         <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required>
@@ -169,6 +174,7 @@
         </form>
         <span id="msg"></span>
       </div>
+
     </div>
   </div>
   <div class="copyright">
@@ -191,11 +197,9 @@
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
   }
-
 </script>
 
 <script>
-
   var sidemenu = document.getElementById("sidemenu");
 
   function openmenu(){
@@ -204,13 +208,10 @@
   function closemenu(){
     sidemenu.style.right = "-200px";
   }
-
 </script>
-<!-- <form name="submit-to-google-sheet">
-  <input name="email" type="email" placeholder="Email" required>
-  <button type="submit">Send</button>
-</form> -->
 
+<!-- ----------form to google sheets---------- -->
+<!-- ----------https://github.com/jamiewilson/form-to-google-sheets---------- -->
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyHMEdT4MVwxj-lUUTurbLZieqRAsne4nMbp_Wk5XPw8krIw6-nvgowvStR4BwUoti0/exec'
   const form = document.forms['submit-to-google-sheet']
@@ -229,6 +230,5 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
-
   </body>
 </html>
